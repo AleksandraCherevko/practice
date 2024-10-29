@@ -19,6 +19,10 @@ console.log(getShippingMessage("Australia", 120, 50));
 // task 3
 
 function getElementWidth(content, padding, border) {
-  return `${content} + ${padding * 2} + ${border * 2}`;
+  const contentNum = Number.parseInt(content);
+  const paddingNum = Number.parseInt(padding);
+  const borderNumb = Number.parseInt(border);
+
+  return contentNum + paddingNum * 2 + borderNumb * 2;
 }
 console.log(getElementWidth("50px", "8px", "4px"));
