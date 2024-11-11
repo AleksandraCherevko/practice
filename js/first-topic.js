@@ -1,28 +1,61 @@
-"use strict";
+// "use strict";
 
-function makeTransaction(quantity, pricePerDroid) {
-  return `You ordered ${quantity} droids worth ${
-    quantity * pricePerDroid
-  } credits!`;
-}
+// // task 2
 
-console.log(makeTransaction(5, 3000));
+// function getShippingMessage(country, price, deliveryFee) {
+//   return `Shipping to ${country} will cost ${price + deliveryFee} credits`;
+// }
 
-// task 2
+// console.log(getShippingMessage("Australia", 120, 50));
 
-function getShippingMessage(country, price, deliveryFee) {
-  return `Shipping to ${country} will cost ${price + deliveryFee} credits`;
-}
+// // task 3
 
-console.log(getShippingMessage("Australia", 120, 50));
+// function getElementWidth(content, padding, border) {
+//   return parseFloat(content) + 2 * parseFloat(padding) + 2 * parseFloat(border);
+// }
+// console.log(getElementWidth("50px", "8px", "4px"));
 
-// task 3
+// // task 4
 
-function getElementWidth(content, padding, border) {
-  const contentNum = Number.parseInt(content);
-  const paddingNum = Number.parseInt(padding);
-  const borderNumb = Number.parseInt(border);
+// function isEven(number) {
+//   if (number % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-  return contentNum + paddingNum * 2 + borderNumb * 2;
-}
-console.log(getElementWidth("50px", "8px", "4px"));
+// console.log(isEven(4)); // true
+// console.log(isEven(7)); // false
+
+// // task 5
+
+// function square(num) {
+//   return num * num;
+// }
+
+// console.log(square(5)); // 25
+// console.log(square(2)); // 4
+
+// // task 6
+
+// function getLength(str) {
+//   return str.length;
+// }
+// console.log(getLength("Hello")); // 5
+// console.log(getLength("JavaScript")); // 10
+
+// // task 7
+
+// function max(a, b) {
+//   if (a > b) {
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
+
+// console.log(max(3, 7)); // 7
+// console.log(max(10, 2)); // 10
+const num = 30.8;
+console.log(Math.pow(num));
