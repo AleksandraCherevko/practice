@@ -57,5 +57,5 @@
 
 // console.log(max(3, 7)); // 7
 // console.log(max(10, 2)); // 10
-const num = 30.8;
-console.log(Math.pow(num));
+// const num = 30.8;
+// console.log(Math.pow(num));
