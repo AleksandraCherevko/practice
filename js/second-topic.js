@@ -261,3 +261,67 @@
 
 // console.log(isMultiple(4, 2));
 // console.log(isMultiple(5, 2));
+
+//task 19
+
+// const hours = 14;
+// const minutes = 0;
+// let timestring =
+//   minutes > 0 ? `${hours} г. ${minutes} хв.` : `${hours} г.`;
+
+// console.log(timestring);
+
+// if (minutes > 0) {
+//   console.log(timestring);
+// } else {
+//   console.log(`${hours} г.`);
+// }
+
+// task 20
+
+// const dayUntilDeadline = 10;
+
+// if (dayUntilDeadline === 0) {
+//   console.log("Today");
+// } else if (dayUntilDeadline === 1) {
+//   console.log("Tomorrow");
+// } else if (dayUntilDeadline === 2) {
+//   console.log("Owermorrow");
+// } else {
+//   console.log("Date in the future");
+// }
+
+// const dayUntilDeadline = 0;
+// switch (dayUntilDeadline) {
+//   case 0:
+//     console.log("Today");
+//     break;
+//   case 1:
+//     console.log("Tomorrow");
+//     break;
+//   case 2:
+//     console.log("Owermorrow");
+//     break;
+//   default:
+//     console.log("Date in the future");
+//     break;
+// }
+
+// task 21
+const option = 3;
+let message = "";
+
+switch (option) {
+  case 1:
+    message = "Можете отримати товар до 12.00";
+    break;
+  case 2:
+    message = "Курєр доставить ваш товар";
+  case 3:
+    message = "Посилка буде відправлена сьогодні";
+    break;
+  default:
+    message = "вам зателефонує менеджер";
+    break;
+}
+console.log(message);
