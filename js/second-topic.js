@@ -308,20 +308,20 @@
 // }
 
 // task 21
-const option = 3;
-let message = "";
+// const option = 3;
+// let message = "";
 
-switch (option) {
-  case 1:
-    message = "Можете отримати товар до 12.00";
-    break;
-  case 2:
-    message = "Курєр доставить ваш товар";
-  case 3:
-    message = "Посилка буде відправлена сьогодні";
-    break;
-  default:
-    message = "вам зателефонує менеджер";
-    break;
-}
-console.log(message);
+// switch (option) {
+//   case 1:
+//     message = "Можете отримати товар до 12.00";
+//     break;
+//   case 2:
+//     message = "Курєр доставить ваш товар";
+//   case 3:
+//     message = "Посилка буде відправлена сьогодні";
+//     break;
+//   default:
+//     message = "вам зателефонує менеджер";
+//     break;
+// }
+// console.log(message);
