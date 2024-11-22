@@ -336,3 +336,47 @@
 // console.log(isPalindrome("cat")); // false
 // console.log(isPalindrome("level")); // true
 // console.log(isPalindrome("A man a plan a canal Panama")); // true
+
+// Напиши функцию, которая принимает два числа start и end и возвращает сумму всех чисел в этом диапазоне включительно.
+
+// function sumRange(start, end) {
+//   let total = 0;
+
+//   for (let i = start; i <= end; i++) {
+//     total += i;
+//   }
+
+//   return total;
+// }
+
+// console.log(sumRange(1, 5));
+// console.log(sumRange(3, 7));
+
+// Напиши функцию, которая принимает два числа start и end и выводит в консоль все чётные числа в этом диапазоне включительно.
+
+// function logEvenNumbers(start, end) {
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       console.log(i++);
+//     }
+//   }
+//   return;
+// }
+// console.log(logEvenNumbers(3, 10));
+// console.log(logEvenNumbers(4, 4));
+// console.log(logEvenNumbers(5, 5));
+
+// Напиши функцию, которая принимает число n и возвращает его факториал. Факториал числа исла
+// n — это произведение всех чисел от 1 до n.
+
+// function factorial(n) {
+//   let result = 1;
+
+//   for (let i = 1; i <= n; i++) {
+//     result *= i;
+//   }
+
+//   return result;
+// }
+
+// console.log(factorial(5));
