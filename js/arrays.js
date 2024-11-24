@@ -194,14 +194,39 @@
 
 // console.log(getCommonElements([1, 2, 3], [2, 4]));
 
-function getUniqueElements(array1, array2) {
-  let newArray = [];
-  for (let i = 0; i < array1.length; i += 1) {
-    if (array2.includes(array1[i])) {
-      return array2.concat(array1[i]);
+// function getUniqueElements(array1, array2) {
+//   let newArray = [];
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       return array2.concat(array1[i]);
+//     }
+//   }
+//   return newArray;
+// }
+
+// console.log(getUniqueElements([1, 2, 3], [2, 3, 4]));
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+function countEvenNumbers(array) {
+  let count = 0;
+  for (let i = 0; i < array.length; i += 1) {
+    if (i % 2 === 0) {
+      count += 1;
     }
   }
-  return newArray;
+
+  return count;
 }
 
-console.log(getUniqueElements([1, 2, 3], [2, 3, 4]));
+console.log(countEvenNumbers([1, 2, 3, 4, 5])); // 2
+console.log(countEvenNumbers([10, 15, 20, 25, 30])); // 3
+console.log(countEvenNumbers([])); // 0
