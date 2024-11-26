@@ -216,17 +216,116 @@
 
 // console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 
-function countEvenNumbers(array) {
-  let count = 0;
-  for (let i = 0; i < array.length; i += 1) {
-    if (i % 2 === 0) {
-      count += 1;
-    }
-  }
+// function countEvenNumbers(array) {
+//   let count = 0;
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (i % 2 === 0) {
+//       count += 1;
+//     }
+//   }
 
-  return count;
-}
+//   return count;
+// }
 
-console.log(countEvenNumbers([1, 2, 3, 4, 5])); // 2
-console.log(countEvenNumbers([10, 15, 20, 25, 30])); // 3
-console.log(countEvenNumbers([])); // 0
+// console.log(countEvenNumbers([1, 2, 3, 4, 5])); // 2
+// console.log(countEvenNumbers([10, 15, 20, 25, 30])); // 3
+// console.log(countEvenNumbers([])); // 0
+
+// const values = "8 11";
+// function calculatSquare(values) {
+//   const newAr = values.split(" ");
+
+//   const width = newAr[0];
+//   const heigth = newAr[1];
+
+//   return width * heigth;
+// }
+
+// const res = calculatSquare(values);
+// console.log(res);
+
+// const fruits = ["banana", "orange", "plum", "apple", "grape"];
+// function consoleFruits(array) {
+//   for (let i = 0; i < fruits.length; i += 1) {
+//     const element = fruits[i];
+//     console.log(`${i}: ${element}`);
+//   }
+// }
+
+// const result = consoleFruits(fruits);
+
+// Напиши функцию, которая принимает массив чисел и возвращает новый массив,
+// содержащий только те числа, которые больше заданного значения.
+
+// const numbers = [1, 5, 10, 15, 20];
+// function filterNumbers(array, count) {
+//   const newAr = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (count < numbers[i]) {
+//       console.log(numbers[i]);
+//     }
+//   }
+// }
+// const result = filterNumbers(numbers, 10);
+
+// function sumArray(array) {
+//   let total = 0;
+//   for (let i = 0; i < array.length; i += 1) {
+//     total += array[i];
+//   }
+//   return `total: ${total}`;
+// }
+
+// console.log(sumArray([2, 4, 6, 8]));
+
+// const numbers = [412, 371, 94, 63, 176];
+// function calculateTotalPrice(array) {
+//   let total = 0;
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     total += numbers[i];
+//     console.log(total);
+//   }
+//   return total;
+// }
+
+// const result = calculateTotalPrice(numbers);
+
+// Задача: Работа с массивом строк
+// Напишите функцию processArray(strings, delimiter, targetWord), которая выполняет следующие действия:
+
+// Соединяет массив строк в одну строку с использованием разделителя delimiter.
+// Разделяет получившуюся строку обратно в массив слов.
+// Проверяет, входит ли targetWord в массив. Если слово есть:
+// Удаляет его с помощью pop() или splice().
+// Добавляет его в конец массива через push().
+// Возвращает новый массив, содержащий только первые 3 элемента (или меньше, если массив короче) и последние 2 элемента.
+// Если слово отсутствует в массиве, просто возвращает его индекс через indexOf().
+
+// const strings = ["Hello", "world", "this", "is", "JavaScript"];
+// const delimiter = " ";
+// const targetWord = "this";
+
+// function processArray(strings, delimiter, targetWord) {
+//   for (const string of strings) {
+//     if (targetWord === string) {
+//       return strings.join(delimiter);
+//     }
+//   }
+//   return strings.indexOf(targetWord);
+// }
+
+// console.log(processArray(strings, delimiter, targetWord));
+
+// const strings = ["Hello", "world", "this", "is", "JavaScript"];
+// const delimiter = " ";
+// const targetWord = "this";
+
+// function processArray(strings, delimiter, targetWord) {
+//   if (strings.includes(targetWord)) {
+//     return strings.join(delimiter);
+//   }
+
+//   return strings.indexOf(targetWord);
+// }
+
+// console.log(processArray(strings, delimiter, targetWord));
