@@ -329,3 +329,32 @@
 // }
 
 // console.log(processArray(strings, delimiter, targetWord));
+
+// function slugify(title) {
+//   return title.toLowerCase().split(" ").join("-");
+// }
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   const newArray = firstArray.concat(secondArray);
+
+//   if (newArray.length > maxLength) {
+//     return newArray.slice(0, maxLength);
+//   }
+//   return newArray;
+// }
+
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+
+// function filterArray(numbers, value) {
+//   const newAr = [];
+//   for (let number of numbers) {
+//     if (number > value) {
+//       newAr.push(number);
+//     }
+//   }
+//   return newAr;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
