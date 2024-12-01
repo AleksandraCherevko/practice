@@ -275,14 +275,198 @@
 
 // console.log(getAllPropValues("quantity"));
 
-function calculateTotalPrice(productName) {
-  const products = [
-    { name: "Radar", price: 1300, quantity: 4 },
-    { name: "Scanner", price: 2700, quantity: 3 },
-    { name: "Droid", price: 400, quantity: 7 },
-    { name: "Grip", price: 1200, quantity: 9 },
-  ];
-}
+// function calculateTotalPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
 
-console.log(calculateTotalPrice("Blaster"));
-console.log(calculateTotalPrice("Radar"));
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price * product.quantity;
+//     }
+//     return `Product ${productName} not found!`;
+//   }
+// }
+
+// console.log(calculateTotalPrice("Blaster"));
+// console.log(calculateTotalPrice("Radar"));
+
+// const products = [
+//   { name: "Молоко", price: 50, category: "Продукты" },
+//   { name: "Телефон", price: 30000, category: "Электроника" },
+//   { name: "Хлеб", price: 30, category: "Продукты" },
+//   { name: "Наушники", price: 5000, category: "Электроника" },
+//   { name: "Яблоки", price: 100, category: "Продукты" },
+// ];
+
+// const newAr = [];
+// for (let product of products) {
+//   if (product.category === "Продукты") {
+//     newAr.push(product);
+//   }
+// }
+// console.log(newAr);
+
+// let totalPrice = 0;
+// for (let product of products) {
+//   if (product.category === "Электроника") {
+//     totalPrice += product.price;
+//   }
+// }
+// console.log(totalPrice);
+
+// const products = [
+//   { name: "Молоко", price: 50, category: "Продукты", quantity: 2 },
+//   { name: "Телефон", price: 30000, category: "Электроника", quantity: 1 },
+//   { name: "Хлеб", price: 30, category: "Продукты", quantity: 3 },
+//   { name: "Наушники", price: 5000, category: "Электроника", quantity: 2 },
+//   { name: "Яблоки", price: 100, category: "Продукты", quantity: 5 },
+// ];
+
+// let totalPrice = 0;
+
+// for (let product of products) {
+//   if (product.category === "Электроника") {
+//     totalPrice += product.price * product.quantity;
+//   }
+// }
+
+// console.log(totalPrice);
+
+// // ✅ Логічно й синтаксично згруповані сутності
+// const bookShelf = {
+//   books: ["The Last Kingdom", "Dream Guardian"],
+//   // Це метод об'єкта
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   // Це метод об'єкта
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+// };
+
+// // Виклики методів
+// console.log(bookShelf.getBooks()); // поверне "Returning all books"
+// console.log(bookShelf.addBook("New book 1")); // поверне "Adding book New book 1"
+// console.log(bookShelf.addBook("New book 2")); // поверне "Adding book New book 2"
+
+// const atTheOldToad = {
+//   potions: [],
+//   getPotions() {
+//     return "List of all available potions";
+//   },
+
+//   addPotion(potionName) {
+//     return `Adding ${potionName}`;
+//   },
+// };
+
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion("Power potion"));
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return this.potions;
+//   },
+// };
+// console.log(atTheOldToad.getPotions());
+
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   },
+// };
+
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+// bookShelf.addBook("The Mist");
+// bookShelf.addBook("Dream Guardian");
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist", "Dream Guardian"]
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     this.potions.push(potionName);
+//   },
+// };
+
+// console.log(atTheOldToad.getPotions());
+// atTheOldToad.addPotion("Invisibility");
+// atTheOldToad.addPotion("Power potion");
+// console.log(atTheOldToad.getPotions());
+
+// const bookShelf = {
+//   books: [
+//     { title: "The Last Kingdom", rating: 8 },
+//     { title: "The Mist", rating: 6 },
+//   ],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(newBook) {
+//     this.books.push(newBook);
+//   },
+// };
+
+// bookShelf.addBook({ title: "Dream Guardian", rating: 9 });
+// console.log(bookShelf.getBooks());
+
+// const bookShelf = {
+//   books: [
+//     { title: "The Last Kingdom", rating: 8 },
+//     { title: "The Mist", rating: 6 },
+//   ],
+//   getAvarageRating() {
+//     let totalRating = 0;
+
+//     for (const book of this.books) {
+//       totalRating += book.rating;
+//     }
+
+//     return totalRating / this.books.length;
+//   },
+// };
+
+// bookShelf.getAvarageRating(); // 7
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     this.potions.push(newPotion);
+//   },
+//   getTotalPrice() {
+//     let totalPrice = 0;
+//     for (const potion of this.potions) {
+//       totalPrice += potion.price;
+//     }
+//     return totalPrice;
+//   },
+// };
+
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.getTotalPrice());
+
+// atTheOldToad.addPotion({ name: "Power potion", price: 270 });
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.getTotalPrice());
+
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.getTotalPrice());
