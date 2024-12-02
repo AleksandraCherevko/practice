@@ -105,6 +105,11 @@
 //   hasTail: true,
 // };
 
+// const value = Object.entries(obj);
+// console.log(value); 0
+
+
+
 // function getOwnProps(object) {
 //   for (let key in object) {
 //     console.log(key);
@@ -470,5 +475,3 @@
 // atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
 // console.log(atTheOldToad.getPotions());
 // console.log(atTheOldToad.getTotalPrice());
-
-
