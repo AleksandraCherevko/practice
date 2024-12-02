@@ -108,8 +108,6 @@
 // const value = Object.entries(obj);
 // console.log(value); 0
 
-
-
 // function getOwnProps(object) {
 //   for (let key in object) {
 //     console.log(key);
@@ -475,3 +473,51 @@
 // atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
 // console.log(atTheOldToad.getPotions());
 // console.log(atTheOldToad.getTotalPrice());
+
+// const person = {
+//   name: "Иван",
+//   age: 25,
+//   city: "Москва",
+//   job: "Программист",
+// };
+
+// function keyValue() {
+//   const values = Object.values(person);
+//   console.log(values.length);
+// }
+// keyValue();
+
+// const salaries = {
+//   John: 3000,
+//   Ann: 5000,
+//   Pete: 2500,
+//   Mary: 4000,
+// };
+
+// function calculateTotalSalaries() {
+//   const values = Object.values(salaries);
+//   console.log(values);
+//   let total = 0;
+//   for (let value of values) {
+//     total += value;
+//   }
+
+//   return total;
+// }
+// console.log(calculateTotalSalaries());
+
+// const book = {
+//   title: "1984",
+//   author: "George Orwell",
+//   year: 1949,
+// };
+
+// function printEntries() {
+//   const booksLists = Object.entries(book);
+
+//   for (let [key, value] of booksLists) {
+//     console.log(`Ключ: ${key}, Значение: ${value}`);
+//   }
+// }
+
+// printEntries();
