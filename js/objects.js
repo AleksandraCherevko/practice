@@ -521,3 +521,78 @@
 // }
 
 // printEntries();
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     this.potions.push(potionName);
+//   },
+// };
+
+// console.log(atTheOldToad.getPotions());
+// atTheOldToad.addPotion("Invisibility");
+// console.log(atTheOldToad.getPotions());
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     this.potions.push(newPotion);
+//   },
+//   getTotalPrice() {
+//     let totalPrice = 0;
+//     for (const potion of this.potions) {
+//       totalPrice += potion.price;
+//     }
+
+//     return totalPrice;
+//   },
+// };
+
+// console.log(atTheOldToad.getPotions());
+// atTheOldToad.addPotion({ name: "Power potion", price: 270 });
+// console.log(atTheOldToad.getPotions());
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (const potion of this.potions) {
+//       if (potion.name === oldName) {
+//         potion.name = newName;
+//       }
+//     }
+//   },
+// };
+
+// atTheOldToad.updatePotionName("Stone skin", "Invisibility");
+// console.log(atTheOldToad.getPotions());
+
+// function foo(...args) {
+//   console.log(args);
+// }
+// foo("a", "b");
+// function add(...args) {
+//   console.log(args);
+//   let total = 0;
+
+//   for (let arg of args) {
+//     total += arg;
+//   }
+//   return total;
+// }
+
+// console.log(add(12, 4, 11, 48));
