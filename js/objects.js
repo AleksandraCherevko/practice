@@ -596,3 +596,35 @@
 // }
 
 // console.log(add(12, 4, 11, 48));
+
+// const profile = {
+//   username: "mango",
+//   age: 2,
+// };
+
+// const profileUpd = {
+//   username: "poly",
+// };
+
+// const updProfile = {
+//   ...profile,
+//   ...profileUpd,
+// };
+
+// console.log(updProfile);
+
+// const firstObj = { A: 1, B: 2 };
+// const secondObj = { A: 3, C: 4 };
+
+// const thirdObj = {
+//   A: 5,
+//   ...firstObj,
+//   ...secondObj,
+//   C:  6,
+// };
+// console.log(thirdObj);
+
+function foo(...args) {
+  console.log(args);
+}
+foo(1, 2, 3, 4, 5);
