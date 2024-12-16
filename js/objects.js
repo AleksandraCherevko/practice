@@ -684,27 +684,23 @@
 
 // console.log(calcAverageCalories([])); // 0
 
-const profile = {
-  username: "Jacob",
-  playTime: 300,
+// const profile = {
+//   username: "Jacob",
+//   playTime: 300,
+//   getInfo() {
+//     return `${profile.username} has ${profile.playTime} active hours!`;
+//   },
+//   changeUsername(newName) {
+//     profile.username = newName;
+//   },
 
-  getInfo() {
-    return `${this.username} has ${this.playTime} active hours!`;
-  },
+//   updatePlayTime(hours) {
+//     profile.playTime += hours;
+//   },
+// };
 
-  changeUsername(newName) {
-    profile.username = newName;
-  },
-
-  // updatePlayTime(hours) {
-  //   for (let hour of hours) {
-  //     profile.playTime += hour;
-  //   }
-  // },
-};
-
-console.log(profile.getInfo());
-profile.changeUsername("Marco");
-console.log(profile.getInfo());
+// console.log(profile.getInfo());
+// profile.changeUsername("Marco");
+// console.log(profile.getInfo());
 // profile.updatePlayTime(20);
 // console.log(profile.getInfo());
