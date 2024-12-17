@@ -124,11 +124,88 @@
 
 // console.log(countEvenOdd([1, 2, 3, 4, 5]));
 
-function concatenateStrings(strings) {
-  strings.forEach(function (string) {
-    strings.join(" ");
-  });
+// function concatenateStrings(strings) {
+//   strings.forEach(function (string) {
+//     strings.join(" ");
+//   });
 
-  return strings.join(" ");
-}
-console.log(concatenateStrings(["Hello", "world", "from", "forEach"]));
+//   return strings.join(" ");
+// }
+// console.log(concatenateStrings(["Hello", "world", "from", "forEach"]));
+
+// function areAllPositive(numbers) {
+//   let isPositive = true;
+//   numbers.forEach(function (number) {
+//     if (number <= 0) {
+//       isPositive = false;
+//     }
+//   });
+//   return isPositive;
+// }
+
+// console.log(areAllPositive([1, 2, 3])); // true
+// console.log(areAllPositive([1, -2, 3])); // false
+
+// function findUniques(array) {
+//   const uniqueValues = [];
+//   array.forEach(function (item) {
+//     if (!uniqueValues.includes(item)) {
+//       uniqueValues.push(item);
+//     }
+//   });
+
+//   return uniqueValues;
+// }
+
+// console.log(findUniques([1, 2, 2, 3, 3, 3, 4])); // [1, 2, 3, 4]
+// console.log(findUniques([7, 7, 8, 9, 9, 10, 10, 10])); // [7, 8, 9, 10]
+
+// Задача 8: Подсчёт букв в строках
+// Напиши функцию countLetters, которая принимает массив строк и возвращает массив, где каждый элемент — это количество букв в соответствующей строке массива. Используй метод forEach.
+
+// function countLetters(items) {
+//   const newAr = [];
+//   items.forEach(function (value) {
+//     newAr.push(value.length);
+//   });
+
+//   return newAr;
+// }
+
+// console.log(countLetters(["cat", "elephant", "dog"]));
+// console.log(countLetters(["hello", "world"]));
+
+// Задача 9: Создание массива из чисел больше N
+// Напиши функцию greaterThanN, которая принимает массив чисел и число n. Функция должна возвращать массив чисел, которые больше n. Используй метод forEach.
+
+// function greaterThanN(values, N) {
+//   const newAr = [];
+//   values.forEach(function (value) {
+//     if (value > N) {
+//       newAr.push(value);
+//     }
+//   });
+
+//   return newAr;
+// }
+// console.log(greaterThanN([10, 20, 30, 40], 25));
+// console.log(greaterThanN([5, 15, 25, 35], 20));
+
+// Задача 10: Форматирование объектов
+// Напиши функцию formatUsers, которая принимает массив объектов с информацией о пользователях (name и age) и выводит в консоль строки вида "User: John, Age: 25". Используй метод forEach.
+
+// function formatUsers(users) {
+//   users.forEach(function (user) {
+//     console.log(`User: ${user.name}, Age: ${user.age}`);
+//   });
+// }
+// const users = [
+//   { name: "John", age: 25 },
+//   { name: "Alice", age: 30 },
+//   { name: "Bob", age: 20 },
+// ];
+// formatUsers(users);
+// // Вывод:
+// // User: John, Age: 25
+// // User: Alice, Age: 30
+// // User: Bob, Age: 20
