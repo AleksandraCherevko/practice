@@ -507,3 +507,199 @@
 // const result = users.filter((user) => user.balance > 3000);
 // console.log(result);
 
+// У тебя есть массив цен на продукты. Нужно создать новый массив, где каждая цена будет увеличена на 20%.
+// const prices = [100, 200, 300, 400, 500];
+// const percent = 20;
+
+// const newAr = prices.map((price) => price + (price * percent) / 100);
+// console.log(newAr);
+
+// Результат: [120, 240, 360, 480, 600]
+
+// Дан массив чисел. Нужно создать массив, где каждый элемент будет преобразован в строку.
+
+// const numbers = [1, 2, 3, 4, 5];
+// const newNum = numbers.map((number) => number.toString());
+// console.log(newNum);
+
+// Результат: ["1", "2", "3", "4", "5"]
+
+// Дан массив объектов, где каждый объект представляет человека. Нужно оставить только тех, кто старше 18 лет.
+
+// const people = [
+//   { name: "Alice", age: 17 },
+//   { name: "Bob", age: 22 },
+//   { name: "Charlie", age: 19 },
+//   { name: "Diana", age: 15 },
+// ];
+
+// const adult = people.filter((persone) => persone.age >= 18);
+// console.log(adult);
+
+// Дан массив объектов, где у каждого пользователя есть свойство isActive. Нужно оставить только активных пользователей.
+
+// const users = [
+//   { name: "Alice", isActive: false },
+//   { name: "Bob", isActive: true },
+//   { name: "Charlie", isActive: true },
+//   { name: "Diana", isActive: false },
+// ];
+
+// const activeUser = users.filter((user) => user.isActive);
+// console.log(activeUser);
+
+// Дан массив пользователей. Нужно найти первого пользователя с указанным email.
+
+// const users = [
+//   { name: "Alice", email: "alice@example.com" },
+//   { name: "Bob", email: "bob@example.com" },
+//   { name: "Charlie", email: "charlie@example.com" },
+// ];
+
+// const getUserName = users.find((user) => user.email === "bob@example.com");
+// console.log(getUserName);
+
+// Дан массив книг, у каждой книги есть название и автор. Нужно найти первую книгу с названием "The Great Gatsby".
+
+// const books = [
+//   { title: "To Kill a Mockingbird", author: "Harper Lee" },
+//   { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+//   { title: "1984", author: "George Orwell" },
+// ];
+
+// const theGreatGatsby = books.find((book) => book.title === "The Great Gatsby");
+// console.log(theGreatGatsby);
+
+// Дан массив пользователей. Нужно отфильтровать тех, у кого баланс больше 5000, а затем создать массив, состоящий только из их имён.
+
+// const users = [
+//   { name: "Alice", balance: 4800 },
+//   { name: "Bob", balance: 5200 },
+//   { name: "Charlie", balance: 7300 },
+//   { name: "Diana", balance: 3200 },
+// ];
+
+// const newUsers = users.filter((user) => user.balance > 5000);
+// const newAr = newUsers.map((newUser) => newUser.name);
+// console.log(newAr);
+
+// Напиши функцию getUsersByGender(users, gender), которая принимает массив пользователей и строку gender.
+// Функция должна возвращать массив объектов пользователей указанного пола.
+
+// const users = [
+//   { name: "Alice", gender: "female", age: 25 },
+//   { name: "Bob", gender: "male", age: 30 },
+//   { name: "Charlie", gender: "male", age: 35 },
+//   { name: "Diana", gender: "female", age: 22 },
+// ];
+
+// const getUsersByGender = (users, gender) => {
+//   return users.filter((user) => user.gender === gender);
+// };
+
+// console.log(getUsersByGender(users, "female"));
+
+// Напиши функцию getTotalBalance(users), которая принимает массив объектов, где у каждого объекта есть свойство balance, и возвращает сумму всех балансов.
+
+// const users = [
+//   { name: "Alice", balance: 3000 },
+//   { name: "Bob", balance: 4500 },
+//   { name: "Charlie", balance: 5000 },
+// ];
+
+// const getTotalBalance = (users) => {
+//   let total = 0;
+
+//   const userBalances = users.map((user) => user.balance);
+//   console.log(userBalances);
+
+//   userBalances.forEach(function (userBalance) {
+//     total += userBalance;
+//   });
+//   return total;
+// };
+// console.log(getTotalBalance(users));
+
+// Напиши функцию findUserByAge(users, age), которая принимает массив пользователей и число age.
+// Функция должна возвращать первого пользователя с указанным возрастом или null, если такого пользователя нет.
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 },
+// ];
+
+// const findUserByAge = (users, age) => {
+//   return users.find((user) => user.age === age);
+// };
+
+// console.log(findUserByAge(users, 30));
+// // Результат: { name: "Bob", age: 30 }
+
+// console.log(findUserByAge(users, 40));
+// Результат: null
+
+// Напиши функцию getUsersOlderThan(users, age), которая принимает массив пользователей и число age.
+// Функция должна возвращать массив имён пользователей, которые старше указанного возраста.
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 },
+//   { name: "Elena", age: 40 },
+// ];
+
+// const getUsersOlderThan = (users, age) => {
+//   const filetrUsers = users.filter((user) => user.age > age);
+//   return filetrUsers.map((filetrUser) => filetrUser.name);
+// };
+
+// console.log(getUsersOlderThan(users, 30));
+
+// Напиши функцию filterProductsByPrice(products, priceLimit), которая принимает массив объектов с товарами и число priceLimit.
+// Функция должна возвращать массив названий товаров, цена которых меньше или равна указанному лимиту.
+
+// const products = [
+//   { name: "Laptop", price: 1500 },
+//   { name: "Phone", price: 800 },
+//   { name: "Tablet", price: 1200 },
+//   { name: "iPhone", price: 900 },
+// ];
+
+// const filterProductsByPrice = (products, priceLimit) => {
+//   const productFilter = products.filter(
+//     (product) => product.price <= priceLimit
+//   );
+
+//   return productFilter.map((productFilter) => productFilter.name);
+// };
+// console.log(filterProductsByPrice(products, 1000));
+
+// Напиши функцию findBookByAuthor(books, authorName), которая принимает массив объектов книг и имя автора.
+// Функция должна возвращать объект книги указанного автора.
+
+// const books = [
+//   { title: "1984", author: "George Orwell" },
+//   { title: "The Catcher in the Rye", author: "J.D. Salinger" },
+//   { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+// ];
+
+// const findBookByAuthor = (books, authorName) => {
+//   return books.find((book) => book.author === authorName);
+// };
+// console.log(findBookByAuthor(books, "George Orwell"));
+// Результат: { title: "1984", author: "George Orwell" }
+
+// Напиши функцию sortUsersByAge(users), которая принимает массив пользователей и возвращает новый массив, отсортированный по возрасту (по возрастанию).
+
+// const users = [
+//   { name: "Alice", age: 35 },
+//   { name: "Bob", age: 25 },
+//   { name: "Charlie", age: 30 },
+// ];
+
+// const sortUsersByAge = (users) => {
+//   return users.sort((a, b) => a.age - b.age);
+// };
+
+// console.log(sortUsersByAge(users));
