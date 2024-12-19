@@ -703,3 +703,300 @@
 // };
 
 // console.log(sortUsersByAge(users));
+
+// const isEveryUserActive = (users) => {
+//   return users.every((user) => user.isActive);
+// };
+
+// const isEveryUserActive = (users) => {
+//   return users.some((user) => user);
+// };
+// console.log(
+//   isEveryUserActive([
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       eyeColor: "blue",
+//       friends: ["Sharron Pace"],
+//       isActive: false,
+//       balance: 2811,
+//       gender: "male",
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       eyeColor: "blue",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       isActive: true,
+//       balance: 3821,
+//       gender: "female",
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       eyeColor: "green",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       isActive: false,
+//       balance: 3793,
+//       gender: "male",
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       eyeColor: "green",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       isActive: true,
+//       balance: 2278,
+//       gender: "female",
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       eyeColor: "blue",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       isActive: true,
+//       balance: 3951,
+//       gender: "male",
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       eyeColor: "brown",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       isActive: false,
+//       balance: 1498,
+//       gender: "male",
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       eyeColor: "brown",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       isActive: true,
+//       balance: 2764,
+//       gender: "female",
+//     },
+//   ])
+// );
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+
+// const totalPlayTime = playtimes.reduce((total, playtime) => {
+//   return total + playtime;
+// });
+// console.log(totalPlayTime);
+
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(averagePlayTime);
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+//   const averagePlayTime = player.playtime / player.gamesPlayed;
+//   return acc + averagePlayTime;
+// }, 0);
+
+// console.log(totalAveragePlaytimePerGame);
+
+// const calculateTotalBalance = (users) => {
+//   const totalBalance = users.reduce((total, user) => {
+//     return total + user.balance;
+//   }, 0);
+
+//   return totalBalance;
+// };
+
+// console.log(
+//   calculateTotalBalance([
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       eyeColor: "blue",
+//       friends: ["Sharron Pace"],
+//       isActive: false,
+//       balance: 2811,
+//       gender: "male",
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       eyeColor: "blue",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       isActive: true,
+//       balance: 3821,
+//       gender: "female",
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       eyeColor: "green",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       isActive: false,
+//       balance: 3793,
+//       gender: "male",
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       eyeColor: "green",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       isActive: true,
+//       balance: 2278,
+//       gender: "female",
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       eyeColor: "blue",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       isActive: true,
+//       balance: 3951,
+//       gender: "male",
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       eyeColor: "brown",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       isActive: false,
+//       balance: 1498,
+//       gender: "male",
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       eyeColor: "brown",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       isActive: true,
+//       balance: 2764,
+//       gender: "female",
+//     },
+//   ])
+// );
+
+// Напиши функцию getSum(numbers), которая принимает массив чисел и возвращает их сумму.
+// const numbers = [10, 20, 30, 40, 50];
+// const getSum = (numbers) => {
+//   const totalValue = numbers.reduce((total, number) => {
+//     return total + number;
+//   }, 0);
+//   return totalValue;
+// };
+// console.log(getSum(numbers));
+
+// Напиши функцию findMax(numbers), которая принимает массив чисел и возвращает самое большое число.
+// const numbers = [10, 25, 5, 70, 15];
+// const findMax = (numbers) => {
+//   const maxVal = numbers.reduce((min, number) => {
+//     number > min ? number : min;
+//   }, numbers[0]);
+
+//   return maxVal;
+// };
+
+// console.log(findMax(numbers));
+// 2. Найди самое большое число (легкая)
+// Напиши функцию findMax(numbers), которая принимает массив чисел и возвращает самое большое число.
+
+// javascript
+// Zkopírovat kód
+// const numbers = [10, 25, 5, 70, 15];
+
+// // Ожидаемый результат: 70
+// 3. Найди общую длину строк (средняя)
+// Напиши функцию getTotalLength(strings), которая принимает массив строк и возвращает их общую длину.
+
+// javascript
+// Zkopírovat kód
+// const strings = ["apple", "banana", "cherry", "date"];
+
+// // Ожидаемый результат: 22
+// 4. Подсчитай количество каждого слова (средняя)
+// Напиши функцию countWords(words), которая принимает массив слов и возвращает объект, где ключ — это слово, а значение — количество его вхождений.
+
+// javascript
+// Zkopírovat kód
+// const words = ["apple", "banana", "apple", "cherry", "banana", "banana"];
+
+// // Ожидаемый результат: { apple: 2, banana: 3, cherry: 1 }
+// 5. Преобразуй массив в объект (средняя)
+// Напиши функцию arrayToObject(arr), которая принимает массив объектов с ключами id и value и возвращает объект, где id — это ключи, а value — значения.
+
+// javascript
+// Zkopírovat kód
+// const arr = [
+//   { id: "a", value: 1 },
+//   { id: "b", value: 2 },
+//   { id: "c", value: 3 },
+// ];
+
+// // Ожидаемый результат: { a: 1, b: 2, c: 3 }
+// 6. Подсчитай общую сумму баланса (средняя)
+// Напиши функцию getTotalBalance(users), которая принимает массив пользователей с полем balance и возвращает общую сумму балансов.
+
+// javascript
+// Zkopírovat kód
+// const users = [
+//   { name: "Alice", balance: 1200 },
+//   { name: "Bob", balance: 3500 },
+//   { name: "Charlie", balance: 4700 },
+// ];
+
+// // Ожидаемый результат: 9400
+// 7. Найди средний возраст пользователей (средняя)
+// Напиши функцию getAverageAge(users), которая принимает массив пользователей с полем age и возвращает их средний возраст.
+
+// javascript
+// Zkopírovat kód
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 },
+// ];
+
+// // Ожидаемый результат: 30
+// 8. Создай строку из слов (сложная)
+// Напиши функцию concatenateWords(words), которая принимает массив слов и возвращает строку, где все слова объединены через запятую.
+
+// javascript
+// Zkopírovat kód
+// const words = ["apple", "banana", "cherry", "date"];
+
+// // Ожидаемый результат: "apple, banana, cherry, date"
+// 9. Группировка объектов по категории (сложная)
+// Напиши функцию groupByCategory(items), которая принимает массив объектов с полями name и category и возвращает объект, где ключи — это категории, а значения — массивы имен предметов в этой категории.
+
+// javascript
+// Zkopírovat kód
+// const items = [
+//   { name: "apple", category: "fruits" },
+//   { name: "carrot", category: "vegetables" },
+//   { name: "banana", category: "fruits" },
+//   { name: "broccoli", category: "vegetables" },
+// ];
+
+// // Ожидаемый результат:
+// // {
+// //   fruits: ["apple", "banana"],
+// //   vegetables: ["carrot", "broccoli"]
+// // }
+// 10. Подсчитай количество букв в массиве строк (сложная)
+// Напиши функцию countLetters(strings), которая принимает массив строк и возвращает объект, где ключ — это буква, а значение — сколько раз она встречается во всех строках массива.
+
+// javascript
+// Zkopírovat kód
+// const strings = ["apple", "banana", "cherry"];
+
+// // Ожидаемый результат:
+// // { a: 6, p: 3, l: 1, e: 2, b: 1, n: 2, c: 1, h: 1, r: 1, y: 1 }
