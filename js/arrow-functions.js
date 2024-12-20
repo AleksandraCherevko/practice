@@ -906,72 +906,113 @@
 // };
 
 // console.log(findMax(numbers));
-// 2. Найди самое большое число (легкая)
-// Напиши функцию findMax(numbers), которая принимает массив чисел и возвращает самое большое число.
 
-// javascript
-// Zkopírovat kód
-// const numbers = [10, 25, 5, 70, 15];
-
-// // Ожидаемый результат: 70
 // 3. Найди общую длину строк (средняя)
 // Напиши функцию getTotalLength(strings), которая принимает массив строк и возвращает их общую длину.
 
-// javascript
-// Zkopírovat kód
 // const strings = ["apple", "banana", "cherry", "date"];
+// const getTotalLength = (strings) => {
+//   const totalLength = strings.reduce((total, string) => {
+//     return total + string.length;
+//   }, 0);
+
+//   return totalLength;
+// };
+
+// console.log(getTotalLength(strings));
 
 // // Ожидаемый результат: 22
 // 4. Подсчитай количество каждого слова (средняя)
 // Напиши функцию countWords(words), которая принимает массив слов и возвращает объект, где ключ — это слово, а значение — количество его вхождений.
 
-// javascript
-// Zkopírovat kód
+// const countWords = (words) => {
+//   return words.reduce((acc, word) => {
+//     if (acc[word]) {
+//       acc[word] += 1;
+//     } else {
+//       acc[word] = 1;
+//     }
+//     return acc;
+//   }, {});
+// };
+
 // const words = ["apple", "banana", "apple", "cherry", "banana", "banana"];
+// console.log(countWords(words));
+
+// Ожидаемый результат: { apple: 2, banana: 3, cherry: 1 }
 
 // // Ожидаемый результат: { apple: 2, banana: 3, cherry: 1 }
 // 5. Преобразуй массив в объект (средняя)
 // Напиши функцию arrayToObject(arr), которая принимает массив объектов с ключами id и value и возвращает объект, где id — это ключи, а value — значения.
 
-// javascript
-// Zkopírovat kód
 // const arr = [
 //   { id: "a", value: 1 },
 //   { id: "b", value: 2 },
 //   { id: "c", value: 3 },
 // ];
 
+// const arrayToObject = (arr) => {
+//   return arr.reduce((acc, item) => {
+//     acc[item.id] = item.value;
+//     return acc;
+//   }, {});
+// };
+
+// console.log(arrayToObject(arr));
+
 // // Ожидаемый результат: { a: 1, b: 2, c: 3 }
+
 // 6. Подсчитай общую сумму баланса (средняя)
 // Напиши функцию getTotalBalance(users), которая принимает массив пользователей с полем balance и возвращает общую сумму балансов.
 
-// javascript
-// Zkopírovat kód
 // const users = [
 //   { name: "Alice", balance: 1200 },
 //   { name: "Bob", balance: 3500 },
 //   { name: "Charlie", balance: 4700 },
 // ];
 
+// const getTotalBalance = (users) => {
+//   const total = users.reduce((acc, user) => {
+//     return acc + user.balance;
+//   }, 0);
+
+//   return total;
+// };
+
+// console.log(getTotalBalance(users));
 // // Ожидаемый результат: 9400
+
 // 7. Найди средний возраст пользователей (средняя)
 // Напиши функцию getAverageAge(users), которая принимает массив пользователей с полем age и возвращает их средний возраст.
 
-// javascript
-// Zkopírovat kód
 // const users = [
 //   { name: "Alice", age: 25 },
 //   { name: "Bob", age: 30 },
 //   { name: "Charlie", age: 35 },
 // ];
 
+// const getAverageAge = (users) => {
+//   const averageAge = users.reduce((acc, user) => acc + user.page, 0);
+
+//   return averageAge / users.length;
+// };
+// console.log(getAverageAge(users));
+
 // // Ожидаемый результат: 30
+
 // 8. Создай строку из слов (сложная)
 // Напиши функцию concatenateWords(words), которая принимает массив слов и возвращает строку, где все слова объединены через запятую.
 
-// javascript
-// Zkopírovat kód
-// const words = ["apple", "banana", "cherry", "date"];
+const words = ["apple", "banana", "cherry", "date"];
+
+const concatenateWords = (words) => {
+  const message = words.reduce((acc, word, index) => {
+    return index === 0 ? word : acc + ", " + word;
+  }, "");
+  return message;
+};
+
+console.log(concatenateWords(words));
 
 // // Ожидаемый результат: "apple, banana, cherry, date"
 // 9. Группировка объектов по категории (сложная)
