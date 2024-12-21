@@ -1003,16 +1003,16 @@
 // 8. Создай строку из слов (сложная)
 // Напиши функцию concatenateWords(words), которая принимает массив слов и возвращает строку, где все слова объединены через запятую.
 
-const words = ["apple", "banana", "cherry", "date"];
+// const words = ["apple", "banana", "cherry", "date"];
 
-const concatenateWords = (words) => {
-  const message = words.reduce((acc, word, index) => {
-    return index === 0 ? word : acc + ", " + word;
-  }, "");
-  return message;
-};
+// const concatenateWords = (words) => {
+//   const message = words.reduce((acc, word, index) => {
+//     return index === 0 ? word : acc + ", " + word;
+//   }, "");
+//   return message;
+// };
 
-console.log(concatenateWords(words));
+// console.log(concatenateWords(words));
 
 // // Ожидаемый результат: "apple, banana, cherry, date"
 // 9. Группировка объектов по категории (сложная)
@@ -1041,3 +1041,11 @@ console.log(concatenateWords(words));
 
 // // Ожидаемый результат:
 // // { a: 6, p: 3, l: 1, e: 2, b: 1, n: 2, c: 1, h: 1, r: 1, y: 1 }
+
+for (var i = 0; i < 5; i++) {
+  setTimeout(() => console.log(i), 0);
+}
+
+for (let i = 0; i < 5; i++) {
+  setTimeout(() => console.log(i), 0);
+}
