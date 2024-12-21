@@ -1018,34 +1018,45 @@
 // 9. Группировка объектов по категории (сложная)
 // Напиши функцию groupByCategory(items), которая принимает массив объектов с полями name и category и возвращает объект, где ключи — это категории, а значения — массивы имен предметов в этой категории.
 
-// javascript
-// Zkopírovat kód
-// const items = [
-//   { name: "apple", category: "fruits" },
-//   { name: "carrot", category: "vegetables" },
-//   { name: "banana", category: "fruits" },
-//   { name: "broccoli", category: "vegetables" },
-// ];
+const items = [
+  { name: "apple", category: "fruits" },
+  { name: "carrot", category: "vegetables" },
+  { name: "banana", category: "fruits" },
+  { name: "broccoli", category: "vegetables" },
+];
+const groupByCategory = (items) => {
+  return items.reduce((acc, item) => {
+    for (const key in item) {
+      console.log(key);
 
+      console.log(item[key]);
+    }
+  }, {});
+
+  return acc;
+};
+console.log(groupByCategory(items));
 // // Ожидаемый результат:
 // // {
 // //   fruits: ["apple", "banana"],
 // //   vegetables: ["carrot", "broccoli"]
 // // }
 // 10. Подсчитай количество букв в массиве строк (сложная)
-// Напиши функцию countLetters(strings), которая принимает массив строк и возвращает объект, где ключ — это буква, а значение — сколько раз она встречается во всех строках массива.
-
-// javascript
-// Zkopírovat kód
 // const strings = ["apple", "banana", "cherry"];
+
+// const countLetters = (strings) => {
+//   return strings.reduce((acc, string) => {
+//     for (const letter of string) {
+//       if (acc[letter]) {
+//         acc[letter] += 1;
+//         acc[letter] = 1;
+//       }
+//     }
+//     return acc;
+//   }, {});
+// };
+
+// console.log(countLetters(strings));
 
 // // Ожидаемый результат:
 // // { a: 6, p: 3, l: 1, e: 2, b: 1, n: 2, c: 1, h: 1, r: 1, y: 1 }
-
-for (var i = 0; i < 5; i++) {
-  setTimeout(() => console.log(i), 0);
-}
-
-for (let i = 0; i < 5; i++) {
-  setTimeout(() => console.log(i), 0);
-}
