@@ -1026,10 +1026,8 @@ const items = [
 ];
 const groupByCategory = (items) => {
   return items.reduce((acc, item) => {
-    for (const key in item) {
-      console.log(key);
-
-      console.log(item[key]);
+    if (item.category === item.category) {
+    
     }
   }, {});
 
