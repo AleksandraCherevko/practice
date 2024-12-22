@@ -1018,22 +1018,22 @@
 // 9. Группировка объектов по категории (сложная)
 // Напиши функцию groupByCategory(items), которая принимает массив объектов с полями name и category и возвращает объект, где ключи — это категории, а значения — массивы имен предметов в этой категории.
 
-const items = [
-  { name: "apple", category: "fruits" },
-  { name: "carrot", category: "vegetables" },
-  { name: "banana", category: "fruits" },
-  { name: "broccoli", category: "vegetables" },
-];
-const groupByCategory = (items) => {
-  return items.reduce((acc, item) => {
-    if (item.category === item.category) {
-    
-    }
-  }, {});
+// const items = [
+//   { name: "apple", category: "fruits" },
+//   { name: "carrot", category: "vegetables" },
+//   { name: "banana", category: "fruits" },
+//   { name: "broccoli", category: "vegetables" },
+// ];
+// const groupByCategory = (items) => {
+//   return items.reduce((acc, item) => {
+//     if (item.category === item.category) {
 
-  return acc;
-};
-console.log(groupByCategory(items));
+//     }
+//   }, {});
+
+//   return acc;
+// };
+// console.log(groupByCategory(items));
 // // Ожидаемый результат:
 // // {
 // //   fruits: ["apple", "banana"],
@@ -1058,3 +1058,154 @@ console.log(groupByCategory(items));
 
 // // Ожидаемый результат:
 // // { a: 6, p: 3, l: 1, e: 2, b: 1, n: 2, c: 1, h: 1, r: 1, y: 1 }
+
+// const scores = [61, 19, 74, 35, 92, 56];
+// const ascendingScores = scores.toSorted();
+// console.log(ascendingScores);
+
+// const scores = [27, 2, 41, 4, 7, 3, 75];
+// const bla = scores.toSorted();
+// console.log(bla);
+
+// const letters = ["b", "B", "a", "A", "c", "C"];
+// console.log(letters.toSorted()); // ["A", "B", "C", "a", "b", "c"]
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+
+// const ascendingReleaseDates = releaseDates.toSorted();
+// console.log(ascendingReleaseDates);
+
+// const alphabeticalAuthors = authors.toSorted();
+// console.log(alphabeticalAuthors);
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = releaseDates.toSorted((min, max) => min - max);
+// console.log(ascendingReleaseDates);
+
+// const descendingReleaseDates = releaseDates.toSorted((min, max) => max - min);
+// console.log(descendingReleaseDates);
+
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+
+// const authorsInAlphabetOrder = authors.toSorted((firstLetter, lastLetter) =>
+//   firstLetter.localeCompare(lastLetter)
+// );
+// console.log(authorsInAlphabetOrder);
+
+// const authorsInReversedOrder = authors.toSorted((firstLetter, lastLetter) =>
+//   lastLetter.localeCompare(firstLetter)
+// );
+// console.log(authorsInReversedOrder);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     rating: 7.94,
+//   },
+//   {
+//     title: "Enemy of God",
+//     author: "Bernard Cornwell",
+//     rating: 8.67,
+//   },
+// ];
+
+// const sortedByAuthorName = books.toSorted((firstLetter, lastLetter) =>
+//   firstLetter.author.localeCompare(lastLetter.author)
+// );
+
+// console.log(sortedByAuthorName);
+
+// const sortedByReversedAuthorName = books.toSorted((firstLetter, lastLetter) =>
+//   lastLetter.author.localeCompare(firstLetter.author)
+// );
+// console.log(sortedByReversedAuthorName);
+
+// const sortedByAscendingRating = books.toSorted(
+//   (min, max) => min.rating - max.rating
+// );
+// console.log(sortedByAscendingRating);
+
+// const sortedByDescentingRating = books.toSorted(
+//   (min, max) => max.rating - min.rating
+// );
+// console.log(sortedByDescentingRating);
+
+const students = [
+  { name: "Mango", score: 83, courses: ["mathematics", "physics"] },
+  { name: "Poly", score: 59, courses: ["science", "mathematics"] },
+  { name: "Ajax", score: 37, courses: ["physics", "biology"] },
+  { name: "Kiwi", score: 94, courses: ["literature", "science"] },
+];
+// const sortedByAscendingScore = students.toSorted((a, b) => a.score - b.score);
+// console.log(sortedByAscendingScore);
+
+// const names = sortedByAscendingScore.map((student) => student.name);
+// console.log(names);
+
+// const names = students
+//   .toSorted((a, b) => a.score - b.score)
+//   .map((student) => student.name);
+
+// console.log(names);
+
+// const uniqCourser = students
+//   .flatMap((student) => student.courses)
+//   .filter((course, index, array) => array.indexOf(course) === index)
+//   .toSorted((a, b) => a.localeCompare(b));
+// console.log(uniqCourser);
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  {
+    title: "The Dreams in the Witch House",
+    author: "Howard Lovecraft",
+    rating: 8.67,
+  },
+];
+const MIN_BOOK_RATING = 8;
+
+const names = books;
