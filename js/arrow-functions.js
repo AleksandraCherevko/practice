@@ -1446,3 +1446,10 @@ const students = [
 // console.log(getTotalBalanceByGender(clients, "male")); // 12053
 
 // console.log(getTotalBalanceByGender(clients, "female")); // 8863
+
+// const sortedWordsByLength = (phrases) => {
+//   return phrases.toSorted((short, long) => long.localeCompare(short));
+// };
+
+// const phrases = ["short", "medium length", "longer phrase", "tiny"];
+// console.log(sortedWordsByLength(phrases));
