@@ -1468,14 +1468,27 @@ const students = [
 // function unique(arr) {
 //   const newArr = [];
 
-//   for (let i = 0; i <= arr.length; i += 1) {
-//     let index = arr.indexOf(i + 1);
-//     if (index === ) {
-//       console.log(arr.splice(index));
+//   for (let i = 0; i < arr.length; i += 1) {
+//     if (!newArr.includes(arr[i])) {
+//       newArr.push(arr[i]); // Если нет, добавляем его
 //     }
 //   }
+
 //   return newArr;
 // }
 
 // console.log(unique([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
-// // console.log(unique(["a", "b", "a", "c", "b"])); // ["a", "b", "c"]
+// console.log(unique(["a", "b", "a", "c", "b"])); // ["a", "b", "c"]
+
+// function factorial(n) {
+//   if (n === 0 || n === 1) {
+//     // Базовый случай: факториал 0 и 1 равен 1
+//     return 1;
+//   }
+
+//   // Рекурсивный случай: n * факториал числа n-1
+//   return n * factorial(n - 1);
+// }
+
+// console.log(factorial(5)); // 120 (5 * 4 * 3 * 2 * 1)
+// console.log(factorial(0)); // 1
