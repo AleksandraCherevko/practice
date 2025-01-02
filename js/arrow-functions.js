@@ -1453,3 +1453,29 @@ const students = [
 
 // const phrases = ["short", "medium length", "longer phrase", "tiny"];
 // console.log(sortedWordsByLength(phrases));
+
+// function isEven(num) {
+//   if (num % 2 === 0) {
+//     return "true";
+//   } else {
+//     return "false";
+//   }
+// }
+
+// console.log(isEven(4)); // true
+// console.log(isEven(7)); // false
+
+// function unique(arr) {
+//   const newArr = [];
+
+//   for (let i = 0; i <= arr.length; i += 1) {
+//     let index = arr.indexOf(i + 1);
+//     if (index === ) {
+//       console.log(arr.splice(index));
+//     }
+//   }
+//   return newArr;
+// }
+
+// console.log(unique([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+// // console.log(unique(["a", "b", "a", "c", "b"])); // ["a", "b", "c"]
