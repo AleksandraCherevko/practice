@@ -1492,3 +1492,13 @@ const students = [
 
 // console.log(factorial(5)); // 120 (5 * 4 * 3 * 2 * 1)
 // console.log(factorial(0)); // 1
+
+// function isPalindrome(string) {
+//   const newStr = string.toLowerCase().replace(/[\s.,%:;]/g, "");
+
+//   return newStr === newStr.split("").reverse().join("");
+// }
+
+// console.log(isPalindrome("A man, a plan, a canal: Panama"));
+// console.log(isPalindrome("race a car")); // false
+// console.log(isPalindrome("No lemon, no melon")); // true
