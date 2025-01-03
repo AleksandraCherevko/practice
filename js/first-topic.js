@@ -59,3 +59,43 @@
 // console.log(max(10, 2)); // 10
 // const num = 30.8;
 // console.log(Math.pow(num));
+
+// a1 = true && true;
+// // true
+// a2 = true && false;
+// // false
+// a3 = false && true;
+// // false
+// a4 = false && 3 == 4;
+// // false
+// a5 = "Cat" && "Dog";
+// // dog
+// a6 = false && "Cat";
+// // false
+// a7 = "Cat" && false;
+// // false
+// a8 = "" && false;
+// // ""
+// a9 = false && "";
+// // false
+
+o1 = true || true;
+// turn
+o2 = false || true;
+// true
+o3 = true || false;
+// true
+o4 = false || 3 == 4;
+// false
+o5 = "Cat" || "Dog";
+// cat
+o6 = false || "Cat";
+// cat
+o7 = "Cat" || false;
+//cat
+o8 = "" || false;
+// false
+o9 = false || "";
+// ''
+o10 = false || varObject;
+// varObj
