@@ -79,23 +79,23 @@
 // a9 = false && "";
 // // false
 
-o1 = true || true;
-// turn
-o2 = false || true;
-// true
-o3 = true || false;
-// true
-o4 = false || 3 == 4;
-// false
-o5 = "Cat" || "Dog";
-// cat
-o6 = false || "Cat";
-// cat
-o7 = "Cat" || false;
-//cat
-o8 = "" || false;
-// false
-o9 = false || "";
-// ''
-o10 = false || varObject;
-// varObj
+// o1 = true || true;
+// // turn
+// o2 = false || true;
+// // true
+// o3 = true || false;
+// // true
+// o4 = false || 3 == 4;
+// // false
+// o5 = "Cat" || "Dog";
+// // cat
+// o6 = false || "Cat";
+// // cat
+// o7 = "Cat" || false;
+// //cat
+// o8 = "" || false;
+// // false
+// o9 = false || "";
+// // ''
+// o10 = false || varObject;
+// // varObj

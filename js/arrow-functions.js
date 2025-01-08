@@ -1502,3 +1502,46 @@ const students = [
 // console.log(isPalindrome("A man, a plan, a canal: Panama"));
 // console.log(isPalindrome("race a car")); // false
 // console.log(isPalindrome("No lemon, no melon")); // true
+
+// const a = {
+//   b: 10,
+//   c: 5,
+// };
+
+// console.log(a);
+
+// const d = a;
+// console.log(d);
+
+// d.c = 1098;
+// console.log(d);
+
+// const user = {
+//   name: "Ihor",
+//   age: 25,
+//   city: "Praha",
+// };
+
+// console.log(user);
+
+// user.city = "Kyiv";
+// console.log(user);
+
+// delete user.name;
+// console.log(user);
+
+// console.log(window);
+// console.log(globalThis);
+
+const post = {
+  title: "My post",
+  likesQty: 5,
+  bark() {
+    console.log("Woof!");
+  },
+};
+
+const newVal = JSON.stringify(post);
+console.log(newVal);
+const newValIt = JSON.parse(newVal);
+console.log(newValIt);
