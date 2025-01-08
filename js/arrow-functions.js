@@ -1533,15 +1533,16 @@ const students = [
 // console.log(window);
 // console.log(globalThis);
 
-const post = {
-  title: "My post",
-  likesQty: 5,
-  bark() {
-    console.log("Woof!");
-  },
-};
+// const post = {
+//   title: "My post",
+//   likesQty: 5,
+//   bark() {
+//     console.log("Woof!");
+//   },
+// };
 
-const newVal = JSON.stringify(post);
-console.log(newVal);
-const newValIt = JSON.parse(newVal);
-console.log(newValIt);
+// const newVal = JSON.stringify(post);
+// console.log(newVal);
+// const newValIt = JSON.parse(newVal);
+// console.log(newValIt);
+
