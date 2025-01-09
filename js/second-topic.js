@@ -325,3 +325,13 @@
 //     break;
 // }
 // console.log(message);
+
+// function myFn(a, b) {
+//   let c;
+//   a = a + 1;
+//   с = a + b;
+//   return c
+// }
+
+
+// console.log(myFn(10, 3));
