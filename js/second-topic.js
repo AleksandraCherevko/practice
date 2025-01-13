@@ -333,5 +333,76 @@
 //   return c
 // }
 
-
 // console.log(myFn(10, 3));
+
+// const btn = {
+//   width: 200,
+//   height: 100,
+//   name: "search",
+// };
+
+// const redBtn = {
+//   ...btn,
+// };
+// console.log(redBtn);
+
+// function multByFactory(value, multiplier = 1) {
+//   return value * multiplier;
+// }
+
+// console.log(multByFactory(10, 2));
+
+// const newPost = (post, addedAt = Date()) => ({
+//   ...post,
+//   addedAt,
+// });
+
+// const firstPost = {
+//   id: 1,
+//   author: "Sasha",
+// };
+
+// console.log(newPost(firstPost));
+
+// const newPost = (post, addedAt = Date()) => {
+//     return {
+//       ...post,
+//       addedAt,
+//     };
+//   };
+
+//   const firstPost = {
+//     id: 1,
+//     author: "Sasha",
+//   };
+
+//   console.log(newPost(firstPost));
+
+// const addAge = (user, age = 18) => ({
+//   ...user,
+//   age,
+// });
+
+// const user = {
+//   id: 1,
+//   name: "Bob",
+// };
+
+// const addAge = (user, age = 18) => {
+//   return {
+//     ...user,
+//     age,
+//   };
+// };
+// const user = {
+//   id: 1,
+//   name: "Bob",
+// };
+
+// console.log(addAge(user)); // ожидаемый результат: { id: 1, name: "Bob", age: 18 }
+// console.log(addAge(user, 25)); // ожидаемый результат: { id: 1, name: "Bob", age: 25 }
+
+let x = new Boolean(true);
+let y = new Boolean(true);
+
+console.log(x === y);
