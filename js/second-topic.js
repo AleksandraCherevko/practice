@@ -402,7 +402,13 @@
 // console.log(addAge(user)); // ожидаемый результат: { id: 1, name: "Bob", age: 18 }
 // console.log(addAge(user, 25)); // ожидаемый результат: { id: 1, name: "Bob", age: 25 }
 
-let x = new Boolean(true);
-let y = new Boolean(true);
+// let x = new Boolean(true);
+// let y = new Boolean(true);
 
-console.log(x === y);
+// console.log(x === y);
+
+// console.log(typeof undefined);
+// console.log(isNaN("5"));
+
+
+console.log(x == 5)
