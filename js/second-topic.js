@@ -410,5 +410,20 @@
 // console.log(typeof undefined);
 // console.log(isNaN("5"));
 
+// const myFn = () => {
+//   throw new Error("Some error");
+// };
 
-console.log(x == 5)
+// try {
+//   myFn();
+// } catch (error) {
+//   console.error(error);
+//   console.log(error.message);
+// }
+
+// console.log("Continue....");
+
+// const myAr = [1, 2, 3];
+// const myArSec = [2, 3, 0];
+// const newAr = myAr.map((el) => el * 2);
+// console.log(newAr);
