@@ -358,3 +358,30 @@
 // }
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
 // console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+// const students = [
+//   { name: "Анна", age: 22 },
+//   { name: "Иван", age: 19 },
+//   { name: "Мария", age: 25 },
+//   { name: "Петр", age: 20 },
+//   { name: "Сергей", age: 23 },
+// ];
+
+// function filterAndSortStudents(students) {
+//   return students
+//     .filter((student) => student.age > 20)
+//     .toSorted((firstStudent, secondStudent) =>
+//       firstStudent.name.localeCompare(secondStudent.name)
+//     )
+//     .map((student) => `Имя: ${student.name}, Возраст: ${student.age}`);
+// }
+
+// console.log(filterAndSortStudents(students));
+
+function countCharacters(str) {
+  const newObj = { ...str };
+  console.log(newObj);
+}
+
+console.log(countCharacters("javascript"));
+// Ожидаемый результат: { j: 1, a: 2, v: 1, s: 1, c: 1, r: 1, i: 1, p: 1, t: 1 }
