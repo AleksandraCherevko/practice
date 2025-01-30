@@ -349,3 +349,66 @@
 // console.log(customer.getBalance()); // 19750
 // console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
 
+// class Storage {
+//   #items;
+
+//   constructor(items) {
+//     this.#items = items;
+//   }
+
+//   getItems() {
+//     return this.#items;
+//   }
+//   addItem(newItem) {
+//     return this.#items.push(newItem);
+//   }
+
+//   removeItem(itemToRemove) {
+//     const i = this.#items.indexOf(itemToRemove);
+//     if (i !== -1) {
+//       return this.#items.splice(i, 1);
+//     }
+//   }
+// }
+
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// storage.removeItem("Scaner");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// class StringBuilder {
+//   #initialValue;
+
+//   constructor(value) {
+//     this.#initialValue = value;
+//   }
+//   getValue() {
+//     return this.#initialValue;
+//   }
+//   padEnd(str) {
+//     return (this.#initialValue += str);
+//   }
+
+//   padStart(str) {
+//     return (this.#initialValue = str + this.#initialValue);
+//   }
+
+//   padBoth(str) {
+//     return (this.#initialValue = str + this.#initialValue + str);
+//   }
+// }
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
