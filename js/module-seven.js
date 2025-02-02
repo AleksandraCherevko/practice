@@ -3,3 +3,4 @@
 
 // const titleEl = document.querySelector(".article-title");
 // titleEl.textContent = "Welcome to Bahamas!";
+
