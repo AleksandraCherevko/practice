@@ -412,3 +412,42 @@
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
+
+const users = [
+  { id: 1, name: "Alice", age: 25, city: "New York" },
+  { id: 2, name: "Bob", age: 30, city: "London" },
+  { id: 3, name: "Charlie", age: 28, city: "Berlin" },
+  { id: 4, name: "Diana", age: 22, city: "Paris" },
+  { id: 5, name: "Ethan", age: 35, city: "Tokyo" },
+];
+
+// const listEl = document.querySelector(".list");
+
+// const createMarkup = (user) => {
+//   return `<li>
+//     <p>Id: ${user.id}</p>
+//       <p>Name: ${user.name}</p>
+//         <p>Age: ${user.age}</p>
+//           <p>City: ${user.city}</p>
+//     </li>`;
+// };
+
+// const markup = users.map(createMarkup).join("");
+// listEl.insertAdjacentHTML("beforeend", markup);
+
+// function createMarkup(user) {
+//   const itemEl = document.createElement("li");
+//   const paragraphEl = document.createElement("p");
+//   paragraphEl.textContent = `ID: ${user.id},
+//   Name: ${user.name}, 
+//   Age: ${user.age}, 
+//   City: ${user.city}`;
+
+//   itemEl.append(paragraphEl);
+
+//   return itemEl;
+// }
+
+// const itemEl = users.map(createMarkup);
+// const listEl = document.querySelector(".list");
+// listEl.append(...itemEl);
