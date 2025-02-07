@@ -48,12 +48,12 @@
 //   console.log("Кнопка была нажата, и сейчас появится следующее изображение");
 // });
 
-const button = document.querySelector(".my-button");
+// const button = document.querySelector(".my-button");
 
-const handleClick = (event) => {
-  console.log("event: ", event);
-  console.log("event type: ", event.type);
-  console.log("currentTarget: ", event.currentTarget);
-};
+// const handleClick = (event) => {
+//   console.log("event: ", event);
+//   console.log("event type: ", event.type);
+//   console.log("currentTarget: ", event.currentTarget);
+// };
 
-button.addEventListener("click", handleClick);
+// button.addEventListener("click", handleClick);
