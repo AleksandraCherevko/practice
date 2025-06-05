@@ -385,3 +385,127 @@
 
 // console.log(countCharacters("javascript"));
 // // Ожидаемый результат: { j: 1, a: 2, v: 1, s: 1, c: 1, r: 1, i: 1, p: 1, t: 1 }
+
+const products = [
+  { name: "iPhone", category: "electronics" },
+  { name: "T-shirt", category: "clothing" },
+  { name: "MacBook", category: "electronics" },
+  { name: "Jeans", category: "clothing" },
+  { name: "Blender", category: "home" },
+  { name: "TV", category: "electronics" },
+];
+
+// const categoryCount = products.reduce((accumulator, product) => {
+//   const category = product.category;
+//   const name = product.name;
+
+//   if (accumulator[category]) {
+//     accumulator[category] += name;
+//   } else {
+//     accumulator[category] = name;
+//   }
+
+//   return accumulator;
+// }, {});
+
+// console.log(categoryCount);
+
+// const categoryCount = products
+//   .map((p) => p.name)
+//   .reduce((acc, name) => {
+//     return acc + name.length;
+//   }, 0);
+
+// const nameOfProducts = products.forEach((product) => console.log(product.name));
+// const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+// const wordCount = words.reduce((acc, word) => {
+//   if (acc[word]) {
+//     acc[word] += 1;
+//   } else {
+//     acc[word] = 1;
+//   }
+//   return acc;
+// }, {});
+
+// console.log(wordCount);
+
+// const words = ["dog", "elephant", "cat", "hippopotamus", "lion"];
+
+// const theLongestWord = words.reduce((acc, word) => {
+//   if (word.length > acc.length) {
+//     return word;
+//   } else {
+//     return acc;
+//   }
+
+//   // если word длиннее acc, вернуть word
+//   // иначе вернуть acc
+// }, "");
+
+// console.log(theLongestWord);
+
+// const theLongestWord = words.reduce((acc, word) => {
+//   return word.length > acc.length ? word : acc;
+// });
+// console.log(theLongestWord);
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const result = numbers.reduce(
+//   (acc, num) => {
+
+//     if (num % 2 === 0) {
+//       acc.even.push(num);
+//     } else {
+//       acc.odd.push(num);
+//     }
+//     return acc;
+//   },
+//   { even: [], odd: [] }
+// );
+
+// console.log(result);
+
+// const letters = ["H", "e", "l", "l", "o"];
+// const word = letters.reduce((acc, letter) => acc + letter, "");
+// console.log(word);
+
+// const numbers = [10, 20, 30, 40, 50];
+// const sum = numbers.reduce((acc, num) => acc + num, 0);
+// const average = sum % numbers.length;
+// console.log(average);
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// const average = numbers.reduce((acc, num) => acc + num, 0) / numbers.length;
+
+// console.log(average); // 30
+
+const numbers = [10, 15, 20, 25, 30, 35];
+
+
+function newAr(items) {
+  const even = items.filter((item) => item % 2 === 0); // [10, 20, 30]
+
+  const sum = even.reduce((acc, num) => acc + num, 0); // 60
+
+  const average = sum / even.length; // 60 / 3 = 20
+
+  return average;
+}
+
+console.log(newAr(numbers)); // 👉 20
+
+// const even = numbers.filter((number) => {
+//   if (number % 2 === 0) {
+//     return number;
+//   }
+// });
+
+// const sum = even.reduce((acc, num) => {
+//   let total = acc + num;
+//   return total;
+// }, 0);
+
+// const average = sum / even.length;
+// console.log(average);
